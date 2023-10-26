@@ -28,8 +28,8 @@ body {
 }
 
 h1 {
-   font-size: 2.8rem;
-   line-height: 3.6rem;
+   font-size: clamp(2.8rem, 2vw + 1rem, 4rem);
+   line-height: clamp(3.6rem, 2vw + 1rem, 5rem);
 }
 
 img {
@@ -38,8 +38,8 @@ img {
 }
 
 p, li, strong {
-   font-size: 1.4rem;
-   line-height: 2rem;
+   font-size: clamp(1.4rem, 1vw + 0.6rem, 3rem);
+   line-height: clamp(2rem, 1.5vw + 1rem, 4rem);
 }
 
 .presentation p {
@@ -88,16 +88,6 @@ button:hover {
       max-width: 40rem;
    }
 
-   h1 {
-      font-size: 3.2rem;
-      line-height: 4rem;
-   }
-
-   p, li, strong {
-      font-size: 1.8rem;
-      line-height: 2.3rem;
-   }
-
    ul {
       margin-bottom: 2rem;
    }
@@ -122,16 +112,6 @@ button:hover {
 
    .method {
       max-width: 52.5rem;
-   }
-
-   h1 {
-      font-size: 4rem;
-      line-height: 5rem;
-   }
-
-   p, li, strong {
-      font-size: 2rem;
-      line-height: 3rem;
    }
 
    .method h1 {
